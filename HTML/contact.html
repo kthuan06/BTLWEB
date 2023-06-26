@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../CSS/tailwind.css">
+
+		<link rel="preload" as='style' type="text/css" href="//bizweb.dktcdn.net/100/376/467/themes/790294/assets/bootstrap-min.css?1673312669282">
+		<link rel="preload" as='style' type="text/css" href="//bizweb.dktcdn.net/100/376/467/themes/790294/assets/plugin.scss.css?1673312669282">
+		<link rel="preload" as='style' type="text/css" href="//bizweb.dktcdn.net/100/376/467/themes/790294/assets/base.scss.css?1673312669282">
+		<link rel="preload" as='style' type="text/css" href="//bizweb.dktcdn.net/100/376/467/themes/790294/assets/ant-shoe.scss.css?1673312669282">
+		<link rel="preload" as='style' type="text/css" href="//bizweb.dktcdn.net/100/376/467/themes/790294/assets/edit.scss.css?1673312669282">
+		<link href="//bizweb.dktcdn.net/100/376/467/themes/790294/assets/bootstrap-min.css?1673312669282" rel="stylesheet" type="text/css" media="all" />	
+		<link href="//bizweb.dktcdn.net/100/376/467/themes/790294/assets/plugin.scss.css?1673312669282" rel="stylesheet" type="text/css" media="all" />							
+		<link href="//bizweb.dktcdn.net/100/376/467/themes/790294/assets/ant-shoe.scss.css?1673312669282" rel="stylesheet" type="text/css" media="all" />	
+		<link href="//bizweb.dktcdn.net/100/376/467/themes/790294/assets/edit.scss.css?1673312669282" rel="stylesheet" type="text/css" media="all" />
+		<link rel="preload" as="script" href="//bizweb.dktcdn.net/100/376/467/themes/790294/assets/jquery-2.2.3.min.js?1673312669282" />
+		<link rel="preload" as="script" href="//bizweb.dktcdn.net/100/376/467/themes/790294/assets/bootstrap-notify.js?1673312669282" />
+		<script src="//bizweb.dktcdn.net/100/376/467/themes/790294/assets/jquery-2.2.3.min.js?1673312669282" type="text/javascript"></script>
+		<script src="//bizweb.dktcdn.net/100/376/467/themes/790294/assets/bootstrap-notify.js?1673312669282" type="text/javascript"></script>
+		<link
+            rel="apple-touch-icon"
+            sizes="57x57"
+            href="../favicon/apple-icon-57x57.png"    
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="60x60"
+            href="../favicon/apple-icon-60x60.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="72x72"
+            href="../favicon/apple-icon-72x72.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="76x76"
+            href="../favicon/apple-icon-76x76.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="114x114"
+            href="../favicon/apple-icon-114x114.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="120x120"
+            href="../favicon/apple-icon-120x120.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="144x144"
+            href="../favicon/apple-icon-144x144.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="152x152"
+            href="../favicon/apple-icon-152x152.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="180x180"
+            href="../favicon/apple-icon-180x180.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="192x192"
+            href="../favicon/android-icon-192x192.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="../favicon/favicon-32x32.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="96x96"
+            href="../favicon/favicon-96x96.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="16x16"
+            href="../favicon/favicon-16x16.png"
+        />
+        <link rel="manifest" href="../favicon/manifest.json" />
+        <meta name="msapplication-TileColor" content="#ffffff" />
+        <meta
+            name="msapplication-TileImage"
+            content="../favicon/ms-icon-144x144.png"
+        />
+        <meta name="theme-color" content="#ffffff" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+            integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+        <link rel="stylesheet" href="../CSS/reset.css" />
+        <link rel="stylesheet" href="../CSS/cart.css" />
+        <link rel="stylesheet" href="../CSS/cart-responsive.css" />
+        <style>
+            .header .imageLogo{
+                width: 15rem;
+                height: auto;
+                
+            }
+            .courses-item__action a .courses-item__action-link{
+                color: #e81616;
+            }
+            .courses__price-on-mobile .tien{
+                font-size: 70%;
+                color: #049342;
+            }
+            
+        </style>
+</head>
+<body>
+    
+		<header class="header">
+            <div class="container">
+                <div class="header__inner">
+                    <a href="">
+                        <div class="logo">
+                            <img src="../Image/logo.png" alt="" class="imageLogo">
+                        </div>
+                    </a>
+                    <nav class="nav">
+                        <ul class="nav__list" style="background-color: #e81616;">
+                            <li class="nav__item">
+                                <a
+                                    href="./home.html"
+                                    class="nav__link"
+                                    title="Home"
+                                    >Trang chủ</a
+                                >
+                            </li>
+                            <li class="nav__item">
+                                <a
+                                    href="./introduct.html"
+                                    class="nav__link"
+                                    title="About"
+                                    >Giới thiệu</a
+                                >
+                            </li>
+							<style>
+								.nav-courses__item:hover .nav-courses__item{
+									color: #ffffff;
+								}
+							</style>
+                            <li class="nav__item nav__item--action">
+                                <nav class="nav__courses">
+                                    <ul class="nav-courses__list">
+                                        <li class="nav-courses__item">
+                                            <a
+                                                href="./shoe.html"
+                                                class="nav-courses__link"
+                                                >Giày bóng đá</a
+                                            >
+                                        </li>
+                                        <li class="nav-courses__item">
+                                            <a
+                                                href="./clothes.html"
+                                                class="nav-courses__link"
+                                                >Đồ bóng đá</a
+                                            >
+                                        </li>
+                                        <li class="nav-courses__item">
+                                            <a
+                                                href="./spproduct.html"
+                                                class="nav-courses__link"
+                                                >Sản phẩm hỗ trợ</a
+                                            >
+                                        </li>
+                                        <li class="nav-courses__item">
+                                            <a
+                                                href="./ball.html"
+                                                class="nav-courses__link"
+                                                >Banh bóng đá</a
+                                            >
+                                        </li>
+                                       
+                                       
+                                    </ul>
+                                </nav>
+                                <a
+                                    href="./Buy.html"
+                                    class="nav__link nav__link--action"
+                                    title="Courses"
+                                    >Mua sắm</a
+                                >
+                            </li>
+                            
+                            <li class="nav__item">
+                                <a
+                                    href="./contact.html"
+                                    class="nav__link"
+                                    title="Contact"
+                                    >Liên hệ</a
+                                >
+                            </li>
+                        </ul>
+                    </nav>
+                    <div href="#!" class="header__action">
+                        <a class="header-action__login" href="./login.html"
+                            ><i class="fa-regular fa-user"></i
+                        ></a>
+                        <a href="./Buy.html" class="header-action__cart"
+                            ><i class="fa-solid fa-cart-shopping"></i
+                        ></a>
+                    </div>
+                    <div class="header__search">
+                    
+                    </div>
+                    <a href="./Buy.html" class="menu-action__cart hide-on-pc"
+                        ><i class="fa-solid fa-cart-shopping"></i
+                    ></a>
+                    <label for="menu-checkbox" class="toogle-menu">
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 448 512"
+                        >
+                            <!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                            <path
+                                fill="currentcolor"
+                                d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"
+                            />
+                        </svg>
+                    </label>
+                </div>
+            </div>
+        </header>
+         <!-- Header tablet & mobile -->
+         <div class="menu-header">
+            <input
+                type="checkbox"
+                name=""
+                id="menu-checkbox"
+                class="menu-checkbox  hidden"
+              
+            />
+            <label for="menu-checkbox" class="menu-overlay"></label>
+            <div class="hide-on-pc menu-drawer">
+                <div class="logo">
+                    <span class="logo__text">
+                        <span class="logo__branch"
+                            >TKV sports <span style="color: orange">.</span></span
+                        >
+                    </span>
+                </div>
+                <label for="menu-checkbox" class="menu-close"
+                    ><i class="fa-solid fa-xmark"></i
+                ></label>
+                <form class="menu-search-form">
+                    <input
+                        type="text"
+                        class="menu-search__input"
+                        placeholder="Tìm kiếm..."
+                    />
+                    <span class="menu-search__icon"
+                        ><i class="fa-solid fa-magnifying-glass"></i
+                    ></span>
+                </form>
+                <div class="seperate tablet-seperate"></div>
+                <nav class="menu-navbar">
+                    <ul class="menu-navbar__list">
+                        <li class="menu-navbar__item">
+                            <a
+                                href="./home.html"
+                                class="menu-navbar__link"
+                                title="Home"
+                                >Trang chủ</a
+                            >
+                        </li>
+                        <li class="menu-navbar__item">
+                            <a
+                                href="./introduct.html"
+                                class="menu-navbar__link"
+                                title="About"
+                            >
+                                Giới thiệu</a
+                            >
+                        </li>
+                        <li class="menu-navbar__item menu-navbar__item--action">
+                            <a
+                                href="./clothes.html"
+                                class="menu-navbar__link menu-navbar__link--action"
+                                title="Courses"
+                            >
+                                Đồ bóng đá</a
+                            >
+                        </li>
+                        <li class="menu-navbar__item menu-navbar__item--action">
+                            <a
+                                href="./shoe.html"
+                                class="menu-navbar__link menu-navbar__link--action"
+                                title="Courses"
+                            >
+                                Giày bóng đá</a
+                            >
+                        </li>
+                        <li class="menu-navbar__item menu-navbar__item--action">
+                            <a
+                                href="./ball.html"
+                                class="menu-navbar__link menu-navbar__link--action"
+                                title="Courses"
+                            >
+                                Banh bóng đá</a
+                            >
+                        </li>
+                        <li class="menu-navbar__item menu-navbar__item--action">
+                            <a
+                                href="./spproduct.html"
+                                class="menu-navbar__link menu-navbar__link--action"
+                                title="Courses"
+                            >
+                                Sản phẩm hỗ trợ</a
+                            >
+                        </li>
+                        <li class="menu-navbar__item">
+                            <a
+                                href="./Buy.html"
+                                class="menu-navbar__link"
+                                title="Blogs"
+                                >Giỏ hàng</a
+                            >
+                        </li>
+                        <li class="menu-navbar__item">
+                            <a
+                                href="./contact.html"
+                                class="menu-navbar__link"
+                                title="Contact"
+                            >
+                                Liên hệ</a
+                            >
+                        </li> 
+                        <div class="seperate"></div>
+                        <li class="menu-navbar__item">
+                            <a href="./login.html" class="menu-navbar__link"
+                                >Tài khoản</a
+                            >
+                        </li>
+                        <li class="menu-navbar__item">
+                            <a href="" class="menu-navbar__link"
+                                >Đăng xuất</a
+                            >
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
+        <h1 class="hidden">SPORT SHOP - 𝐒𝐏𝐎𝐑𝐓 𝐒𝐇𝐎𝐏 - Chuyên cung cấp các sản phẩm quần áo thời trang & phụ kiện thể thao: chạy bộ, yoga, gym... cùng các hướng dẫn, chia sẻ kinh nghiệm tập luyện.</h1>
+		<div class="banner-bread-crumb">
+			<img src="../Image/banner_2_image.webp" alt="Banner-bread">
+		</div>
+		<section class="bread-crumb margin-bottom-30">
+			<div class="container">
+				<div class="row">
+					
+					<div class="col-xs-12">
+						<ul class="breadcrumb" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">					
+							<li class="home">
+								<a itemprop="url" href="./home.html" title="Trang chủ"><span itemprop="title">Trang chủ</span></a>						
+								<span><i class="fa fa-angle-right"></i></span>
+							</li>
+							
+							<li><a href="./lienhe.html"><strong itemprop="title">Liên hệ</strong></a></li>
+							
+						</ul>
+					</div>
+				</div>
+			</div>
+		</section>
+		<div class="container contact margin-bottom-20 page-contact">
+			<div class="row">
+				<div class="col-md-4 col-md-push-8">
+					<div class="widget-item info-contact in-fo-page-content">
+						<h1 class="title-head">Thông tin liên hệ</h1>
+						<!-- End .widget-title -->
+						<ul class="widget-menu contact-info-page">
+							<li>
+								TKVH Sport
+							</li>
+							
+							<li><i class="fa fa-map-marker" aria-hidden="true"></i> Ngũ Hành Sơn,Đà Nẵng</li>
+							<li><i class="fa fa-phone" aria-hidden="true"></i> <a href="tel:0915300000">0915300000</a></li>
+							<li><i class="fa fa-envelope" aria-hidden="true"></i> <a href="mailto: tkvsportshop@gmail.com"> tkvsportshop@gmail.com</a></li>
+							<li>
+								<span>
+									<strong>Đây là một số sản phẩm ưu đãi:</strong>
+									<ul>
+										<li>
+											<a href="./clothes.html"><span>Áo quần câu lạc bộ</span></a>
+										</li>
+										<li>
+											<a href="./shoe.html">Giày đá bóng</a>
+										</li>
+										<li>
+											<a href="./ball.html"> Banh bóng đá</a>
+										</li>
+										<li>
+											<a href="./spproduct.html">Các sản phảm hỗ trợ</a>
+										</li>
+									</ul>
+								</span>
+							</li>
+						</ul>
+						<!-- End .widget-menu -->
+					</div>
+				</div>
+				<div class="col-md-8 col-md-pull-4">
+					<div class="page-login">
+						<h3 class="title-head">Gửi thông tin</h3>
+						<span class="text-contact margin-bottom-10 block">Bạn hãy điền nội dung tin nhắn vào form dưới đây và gửi cho chúng tôi. Chúng tôi sẽ trả lời bạn sau khi nhận được.</span>
+						<form method="post" action="/postcontact" id="contact" accept-charset="UTF-8" class="has-validation-callback"><input name="FormType" type="hidden" value="contact"><input name="utf8" type="hidden" value="true"><input type="hidden" id="Token-7a8e36b0b50743ec93ae884e3d7473a8" name="Token" value="03AL8dmw9SEDJlTWW2ECtQOx1TmFxdX2_F1JdVTQLKZDaXvmU63QwGSS1N_t_UQlSrMFnMRKs9MqMZo9Ardqj3j2qXBASdWNnk8Br61WBiinx3VAgTo4Aq-1lY9yuIoEQhWAJnTUd34-BCnYx7CrxSe9CpWcja2nhbt-pI__1qeP3poh9nJeGEW7YsWPDbH4mTPeGuHu6gTv1WPxUEvMPcDHBB7-UxNMQfqEpFsPoyXKDaSbUcev9nuqg6df2MamMaHT71y5j7AQQXC3lIxU6JYP1ldr4h6a7KT46hpMzR7S-vFfhGcwsFiBvM3P250SXqswN9BB1l82Ebwrod8vmYBAM4y1M2Rt5zhAjc4P9FAyTby1b3HZQTI1hGv_neuCk8f-m_4NTJj3U3lQ-l577Npb7eRZQttQtrEeAON0EaSV1RGSQKjC37ItRwIjrH25keTHuuYImd-zltOET5LdYmM_d_PlFzNVAvvDr6EsAIsK3HFb8nwMW-DyImjoQTI4_pFWcoNobNuwC9l2eiiTtXzOXDxkowIrQUs8NuIUPPkbYiEIVF591_hsTpfJgZre_0zsgwMjUb88IGp2bumHThG4AdCJgz5PjBMw"><script src="https://www.google.com/recaptcha/api.js?render=6Ldtu4IUAAAAAMQzG1gCw3wFlx_GytlZyLrXcsuK"></script><script>grecaptcha.ready(function() {grecaptcha.execute("6Ldtu4IUAAAAAMQzG1gCw3wFlx_GytlZyLrXcsuK", {action: "contact"}).then(function(token) {document.getElementById("Token-7a8e36b0b50743ec93ae884e3d7473a8").value = token});});</script>
+						
+						<div class="form-signup clearfix">
+							<div class="row">
+								<div class="col-sm-6 col-xs-12">
+									<fieldset class="form-group">
+										<label>Họ tên<span class="required">*</span></label>
+										<input type="text" name="contact[name]" id="name" class="form-control  form-control-lg" data-validation-error-msg="Không được để trống" data-validation="required" required="">
+									</fieldset>
+								</div>
+								<div class="col-sm-6 col-xs-12">
+									<fieldset class="form-group">
+										<label>Email<span class="required">*</span></label>
+										<input type="email" name="contact[email]" data-validation="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,63}$" data-validation-error-msg="Email sai định dạng" id="email" class="form-control form-control-lg" required="">
+									</fieldset>
+								</div>
+								<div class="col-sm-12 col-xs-12">
+									<fieldset class="form-group">
+										<label>Điện thoại<span class="required">*</span></label>
+										<input type="tel" name="contact[phone]" data-validation="tel" data-validation-error-msg="Không được để trống" id="tel" class="number-sidebar form-control form-control-lg" required="">
+									</fieldset>
+								</div>
+								<div class="col-sm-12 col-xs-12">
+									<fieldset class="form-group">
+										<label>Nội dung<span class="required">*</span></label>
+										<textarea name="contact[body]" id="comment" class="form-control form-control-lg" rows="5" data-validation-error-msg="Không được để trống" data-validation="required" required=""></textarea>
+									</fieldset>
+									<div class="pull-xs-left" style="margin-top:20px;">
+										<button type="submit" class="btn btn-reds btn-style btn-style-active" style="padding: 0; height: 40px;">Gửi tin nhắn</button>
+									</div> 
+								</div>
+							</div>
+						</div>
+						</form>
+					</div>
+				</div>
+				<div class="col-md-12">
+					<div class="box-maps margin-top-10 margin-bottom-10">
+						
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+        <footer class="footer-container mt-10">
+
+            <style>
+                @media (min-width: 992px) {
+                    #footer-top {
+                      display: flex;
+                    }
+                    #ft-top{
+                        display: flex;
+                    }
+                    .ul-1, .ul-2, .ul-3{
+                        display: none;
+                    }
+                  }
+                  @media (max-width: 991px) {
+                    #footer-top > ul {
+                       display: none;
+                    }
+                    #ft-top{
+                        display: block;
+                        margin-left: 30px;
+                    }
+                    .ul-1, .ul-2, .ul-3{
+                        display: block;
+                        margin-left: 50px;
+                    }
+                  }
+               </style>
+        
+            <div class="flex ml-96" id="ft-top">
+                <h5 class="lg:w-1/5 w-full text-white">VỀ CHÚNG TÔI</h5>
+                <ul class="ul-1">
+                    <li><a href=""  class="text-white">Trang chủ</a></li>
+                    <li><a href=""  class="text-white">Giới thiệu</a></li>
+                    <li><a href=""  class="text-white">Sản phẩm</a></li>
+                    <li><a href=""  class="text-white">Liên hệ</a></li>
+                </ul>
+                <h5 class="lg:w-1/5 w-full text-white">CHÍNH SÁCH</h5>
+                <ul class="ul-2">
+                    <li><a href=""  class="text-white">Chính sách bảo mật</a></li>
+                    <li><a href=""  class="text-white">Chính sách vận chuyển</a></li>
+                    <li><a href=""  class="text-white">Chính sách bảo hành</a></li>
+                    <li><a href=""  class="text-white">Chính sách đổi trả</a></li>
+                    <li><a href=""  class="text-white">Chính sách thanh toán</a></li>
+                    <li><a href=""  class="text-white">Quy định sử dụng</a></li>
+                </ul>
+                <h5 class="lg:w-1/5 w-full text-white">HƯỚNG DẪN</h5>
+                <ul class="ul-3">
+                    <li><a href=""  class="text-white">Hướng dẫn mua hàng</a></li>
+                    <li><a href=""  class="text-white">Hướng dẫn thanh toán</a></li>
+                    <li><a href=""  class="text-white">Hướng dẫn giao nhận</a></li>
+                    <li><a href=""  class="text-white">Điều khoản dịch vụ</a></li>
+                </ul>
+            </div>
+           
+            <div class="ml-96" id="footer-top" >
+                <ul class="w-1/5">
+                    <li><a href=""  class="text-white">Trang chủ</a></li>
+                    <li><a href=""  class="text-white">Giới thiệu</a></li>
+                    <li><a href=""  class="text-white">Sản phẩm</a></li>
+                    <li><a href=""  class="text-white">Liên hệ</a></li>
+                </ul>
+                <ul class="w-1/5">
+                    <li><a href=""  class="text-white">Chính sách bảo mật</a></li>
+                    <li><a href=""  class="text-white">Chính sách vận chuyển</a></li>
+                    <li><a href=""  class="text-white">Chính sách bảo hành</a></li>
+                    <li><a href=""  class="text-white">Chính sách đổi trả</a></li>
+                    <li><a href=""  class="text-white">Chính sách thanh toán</a></li>
+                    <li><a href=""  class="text-white">Quy định sử dụng</a></li>
+                </ul>
+                <ul class="w-1/5">
+                    <li><a href=""  class="text-white">Hướng dẫn mua hàng</a></li>
+                    <li><a href=""  class="text-white">Hướng dẫn thanh toán</a></li>
+                    <li><a href=""  class="text-white">Hướng dẫn giao nhận</a></li>
+                    <li><a href=""  class="text-white">Điều khoản dịch vụ</a></li>
+                </ul>
+            </div>
+        
+        
+        
+            <div class="footer-information">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-3">
+                            <a href="/" class="logo-footer">					
+                                <img style="width: 300px; height: 200px;" src="../Image/logo.png" alt="logo SPORT SHOP" />					
+                            </a>
+                        </div>
+                        <div class="col-md-5">
+                            <ul class="footer-info">
+                                
+                                <li><i class="fa fa-map-marker" aria-hidden="true"></i> Ngũ Hành Sơn, Đà Nẵng</li>
+                                <li><i class="fa fa-phone" aria-hidden="true"></i> <a href="tel:0969959168">0915300000</a></li>
+                                <li><i class="fa fa-envelope" aria-hidden="true"></i> <a href="mailto: sportshop.vn.official@gmail.com"> tkvsportshop@gmail.com</a></li>
+                                <li><i class="fa fa-globe" aria-hidden="true"></i> <a href="https://tkvsportshop.vn/">https://tkvtkvsportshop.vn/</a></li>
+                                
+                            </ul>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="payment">
+                                <h3></h3>
+                                
+                                
+                                <div class="social-fot">
+                                    <h4>Kết nối với chúng tôi</h4>
+                                    <ul class="footer-info">
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            <li>
+                <a href="https://www.lazada.vn/shop/sportshop-vn" target="_blank" class="mc-lazada btn-transition dp-flex" title="LAZADA">
+                    <img src="//bizweb.dktcdn.net/100/376/467/themes/790294/assets/social_lazada_icon.svg?1673312669282" alt="lazada">
+                </a>
+            </li>
+            
+            
+            
+            
+            
+            
+            <li>
+                <a href="#" target="_blank" class="mc-sendo btn-transition dp-flex" title="SENDO">
+                    <img src="//bizweb.dktcdn.net/100/376/467/themes/790294/assets/social_sendo_icon.svg?1673312669282" alt="sendo">
+                </a>
+            </li>
+            
+            
+            
+            
+            
+            
+            <li>
+                <a href="#" target="_blank" class="mc-tiki btn-transition dp-flex" title="TIKI">
+                    <img src="//bizweb.dktcdn.net/100/376/467/themes/790294/assets/social_tiki_icon.svg?1673312669282" alt="tiki">
+                </a>
+            </li>
+            
+            
+            
+            
+            
+            
+            <li>
+                <a href="https://shopee.vn/sportshoponline" target="_blank" class="mc-shopee btn-transition dp-flex" title="SHOPEE">
+                    <img src="//bizweb.dktcdn.net/100/376/467/themes/790294/assets/social_shopee_icon.svg?1673312669282" alt="shopee">
+                </a>
+            </li>
+            
+            
+        </ul>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="footer-copyright text-center">
+                                <small class="copyright">
+                                    <span>© Bản quyền thuộc về <b>TKVSHOP.VN</b> <span class="s480-f"></span>
+                                    
+                                </small>
+                            </div>
+                        </div>
+                    </div> 
+                </div> 
+                
+                <div class="back-to-top"><i class="fa fa-angle-double-up" aria-hidden="true"></i></div>
+                
+            </div>
+        </footer>	
+
+
+
+</body>
+</html>
